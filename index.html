@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Calculadora de ISR Quincenal 2026 — UABJO</title>
+<title>Calculadora de ISR Quincenal 2026</title>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
 <style>
   /* ============ TOKENS ============ */
@@ -297,7 +297,7 @@
 <div class="wrap">
 
   <div class="masthead">
-    <div class="eyebrow">UABJO · Dirección de Procesamiento de Nómina</div>
+    <div class="eyebrow">Procesamiento de Nóminas</div>
     <h1>Calculadora de ISR Quincenal 2026</h1>
     <p class="subt">Art. 96 LISR · Anexo 8 RMF 2026, DOF 28/12/2025 · Subsidio al Empleo bajo el Decreto DOF 31/12/2025</p>
   </div>
@@ -390,7 +390,7 @@
   </div>
 
   <footer>
-    UABJO — Universidad Autónoma Benito Juárez de Oaxaca · Dirección de Procesamiento de Nómina<br>
+    Procesamiento de Nóminas<br>
     Herramienta de apoyo administrativo · No sustituye la constancia oficial de retenciones.
   </footer>
 </div>
@@ -560,7 +560,7 @@ function generarPDF(){
   doc.setTextColor(...BLANCO);
   doc.setFont('helvetica','bold');
   doc.setFontSize(15);
-  doc.text('UABJO — DIRECCIÓN DE PROCESAMIENTO DE NÓMINA', pageW/2, 12, {align:'center'});
+  doc.text('Procesamiento de Nominas', pageW/2, 12, {align:'center'});
   doc.setFont('helvetica','normal');
   doc.setFontSize(9.5);
   doc.setTextColor(...DORADO);
@@ -696,7 +696,7 @@ function generarPDF(){
   doc.line(marginL, y, marginL+contentW, y);
   y += 5;
   doc.setFont('helvetica','normal'); doc.setFontSize(7.5); doc.setTextColor(100,100,100);
-  doc.text('UABJO — Universidad Autónoma Benito Juárez de Oaxaca  •  Dirección de Procesamiento de Nómina', pageW/2, y, {align:'center'});
+  doc.text('Procesamiento de Nóminas', pageW/2, y, {align:'center'});
   y += 4;
   doc.text(`Documento generado el ${new Date().toLocaleDateString('es-MX')}  •  Cálculo de carácter provisional, no sustituye la constancia oficial de retenciones.`, pageW/2, y, {align:'center'});
 
@@ -710,3 +710,4 @@ document.getElementById('nombre').addEventListener('keydown', e => { if(e.key===
 </script>
 </body>
 </html>
+
